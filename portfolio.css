@@ -331,7 +331,10 @@ h3 { font-size: var(--fs-h3) }
 
 @media (min-width: 800px) {
     .services {
-        display: flex;
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
@@ -340,7 +343,28 @@ h3 { font-size: var(--fs-h3) }
     .service + .service {
         margin-left: 2em;
     }
+
+    
+    
 }
+
+/* Skills */
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2em;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+
+.skills img {
+    width: 10vw;
+}
+
 
 /* About Me */
 
@@ -397,8 +421,12 @@ h3 { font-size: var(--fs-h3) }
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.2em;
 }
 
+.portfolio-title {
+    margin: 0.5em auto;
+}
 
 .portfolio__item {
     background: var(--clr-accent);
@@ -470,7 +498,7 @@ h3 { font-size: var(--fs-h3) }
 
 /* Animations */
 
-strong {
+#name {
     animation-duration: 2s;
     animation-name: slidein;
 }
