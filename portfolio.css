@@ -434,6 +434,11 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .portfolio__img {
+    width: 20em;
+    height: 12em;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 1em;
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
